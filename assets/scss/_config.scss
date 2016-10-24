@@ -1,0 +1,26 @@
+/* 
+ * THEME META DATA
+ * CHANGE THEME META DATA HERE
+ * DO NOT REMOVE THIS FILE!
+ */
+
+@function config($map, $key) {
+  @return map-get($map, $key);
+}
+
+@function metadata($request) {
+  @return config($_metadata, $request);
+}
+
+$_metadata: (
+  theme-name:               "ElixirTheme",
+  theme-author:             "James",
+  theme-author-uri:         "",
+  theme-description:        "",
+  theme-version:            "0.1.0",
+  theme-license:            "GPLv3",
+  theme-license-uri:        "",
+  theme-tags:               (light, responsive-layout, starter-theme),
+  theme-text-domain:        "Theme Text Domain",
+  theme-text-domain-path:   "/languages/"
+);
