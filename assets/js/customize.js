@@ -43,10 +43,10 @@ var customize = {
             recordHistory: true,
 
             //Design
-            controlArrows: true,
+            controlArrows: false,
             verticalCentered: true,
             sectionsColor : ['#fff'],
-            paddingTop: '3em',
+            paddingTop: '0px',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
             responsiveWidth: 0,
@@ -66,6 +66,29 @@ var customize = {
             afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
             onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
         });
+
+        var height = window.innerHeight;
+        console.log(height);
+
+        $("#owl-demo").owlCarousel({
+
+            navigation : false, // Show next and prev buttons
+            slideSpeed : 300,
+            paginationSpeed : 400,
+            singleItem:true,
+            pagination: false,
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1,
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+
+        $('#owl-demo .item').css('height',height);
+
     }
 };
 
