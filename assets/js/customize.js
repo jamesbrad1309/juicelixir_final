@@ -47,7 +47,7 @@ var customize = {
             verticalCentered: true,
             sectionsColor : ['#fff'],
             paddingTop: '0px',
-            paddingBottom: '10px',
+            paddingBottom: '0px',
             fixedElements: '#header, .footer',
             responsiveWidth: 0,
             responsiveHeight: 0,
