@@ -1,5 +1,6 @@
 /* FONTS */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=vietnamese');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=vietnamese');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600&subset=latin-ext');
 
 /* VARIABLES */
 $twitter:      #55acee;
@@ -43,65 +44,13 @@ $socialMedias: (
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
-    min-height: 2000px;
+    //min-height: 2000px;
 }
-
-/* PARALLAX */
-.jarallax {
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-}
-
-/* SOCIAL MEDIA */
-.social-media {
-    a {
-        display: inline-block;
-        float: left;
-        margin-left: 10px;
-        width: 36px;
-        height: 36px;
-        text-align: center;
-        font-size: 20px;
-        color: #fff;
-        background-color: #000;
-        border: 1px solid;
-        padding-top: 2px;
-        &:first-child {
-            margin-left: 0;
-        }
-        &:hover {
-            background-color: #fff;
-            color: #000;
-        }
-    }
-}
-
-.social-media.media-circle {
-    a {
-        border-radius: 50%;
-    }
-}
-
-.social-media.full-color {
-    @each $media, $color in $socialMedias {
-        @include socialColor($media, $color);
-    }
-}
-
-/* SLICK */
-.slick-next:before, 
-.slick-prev:before {
-    color: #111 !important;
-}
-
-.slick-slide {
-    img {
-        width: 100%;
-    }
+*{
+    transition: all 0.3s;
+    box-shadow: none !important
 }
 
 /* ACF-MAP */

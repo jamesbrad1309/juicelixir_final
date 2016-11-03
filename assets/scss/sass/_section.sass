@@ -1,13 +1,30 @@
 .section:not(:first-child)
   position: relative
   img
-    max-width: 250px
     &.abs-center
       display: block
       margin: 0 auto
 
   .content
     margin-bottom: 16px
+    transform: translateY(100%)
     p
-      color: #777
       font-weight: 300
+
+
+.section-header
+  color: #777777
+  font-weight: 400
+  position: relative
+  &:before, &:after
+    content: ''
+    width: 100px
+    height: 2px
+    padding-bottom: 12px
+    border-bottom: 1px solid #dddddd
+    display: inline-block
+    transform: translateY(-50%)
+  &:before
+    margin-right: 8px
+  &:after
+    margin-left: 8px

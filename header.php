@@ -32,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="<?php echo get_field('logo', 'option'); ?>"
+                    <a class="navbar-brand" href="<?php echo bloginfo('url'); ?>"><img src="<?php echo get_field('logo', 'option'); ?>"
                                                           alt="<?php echo bloginfo('name'); ?>" class="img-responsive"></a>
                 </div>
 

@@ -1,0 +1,38 @@
+.products
+  margin-top: 32px
+  margin-bottom: 32px
+
+  .product
+    position: relative
+    max-height: 350px
+    overflow: hidden
+    .price
+      font-size: 12px
+      opacity: 1
+    .add_to_cart_button
+      padding: 0px
+      position: absolute
+      bottom: -20px
+      left: 0
+    .added_to_cart.wc-forward
+      font-size: 12px
+      line-height: 1.5em
+      float: right
+    .price,.add_to_cart_button
+      transition: all 0.3s ease-in-out
+    &:hover
+      .price
+        opacity: 0
+      .add_to_cart_button
+        bottom: 0
+    a
+      text-decoration: none !important
+      color: black
+    img
+      width: auto !important
+      height: auto !important
+      max-width: 100%
+    .onsale
+      position: absolute
+      top: 0
+      left: 0

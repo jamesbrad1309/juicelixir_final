@@ -13,7 +13,9 @@ $file_includes = [
     'inc/theme-assets.php',       // Style and JS
     'inc/theme-setup.php',        // General theme setting
     'inc/acf-options.php',        // ACF Option page
-    'inc/theme-shortcode.php'     // Theme Shortcode
+    'inc/theme-shortcode.php',     // Theme Shortcode
+    'inc/woocommerce/custom-product-archive.php',
+    'inc/woocommerce/custom-billing-info.php'
 ];
 
 foreach ($file_includes as $file) {
